@@ -165,7 +165,7 @@ static void go_to_node(struct edge *edge)
 static int get_symbol(char c)
 {
         int sym = (int)c - FIRST_SYMBOL;
-        assert(0 <= sym && sym <= NUM_SYMBOLS);
+        assert(0 <= sym && sym < NUM_SYMBOLS);
         return sym;
 }
 
